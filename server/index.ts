@@ -3,6 +3,7 @@ import { registerRoutes } from "./routes";
 import { serveStatic } from "./static";
 import { createServer } from "http";
 import { spawn } from "child_process";
+import { existsSync } from "fs";
 import path from "path";
 
 const app = express();
@@ -35,13 +36,28 @@ export function log(message: string, source = "express") {
   console.log(`${formattedTime} [${source}] ${message}`);
 }
 
+function getNodeArgs(scriptPath?: string) {
+  const args: string[] = [];
+  const envFilePath = path.resolve(process.cwd(), ".env");
+
+  if (existsSync(envFilePath)) {
+    args.push(`--env-file=${envFilePath}`);
+  }
+
+  if (scriptPath) {
+    args.push(scriptPath);
+  }
+
+  return args;
+}
+
 function startPingService() {
   if (process.env.DISABLE_PING === "true") {
     return;
   }
 
   const pingScript = path.resolve(process.cwd(), "script", "ping.js");
-  const child = spawn(process.execPath, ["--env-file=.env", pingScript], {
+  const child = spawn(process.execPath, getNodeArgs(pingScript), {
     cwd: process.cwd(),
     env: {
       ...process.env,
