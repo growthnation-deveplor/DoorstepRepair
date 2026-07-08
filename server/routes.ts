@@ -55,6 +55,14 @@ export async function registerRoutes(
 ): Promise<Server> {
   app.set("trust proxy", 1);
 
+  app.get(["/ping", "/health"], (_req, res) => {
+    res.status(200).json({
+      ok: true,
+      service: "devicesdoctor",
+      timestamp: new Date().toISOString(),
+    });
+  });
+
   // Ensure session table exists without relying on connect-pg-simple's table.sql file
   // (which is not available after bundling in production)
   await sessionPool.query(`

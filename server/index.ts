@@ -2,6 +2,8 @@ import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { serveStatic } from "./static";
 import { createServer } from "http";
+import { spawn } from "child_process";
+import path from "path";
 
 const app = express();
 const httpServer = createServer(app);
@@ -31,6 +33,28 @@ export function log(message: string, source = "express") {
   });
 
   console.log(`${formattedTime} [${source}] ${message}`);
+}
+
+function startPingService() {
+  if (process.env.DISABLE_PING === "true") {
+    return;
+  }
+
+  const pingScript = path.resolve(process.cwd(), "script", "ping.js");
+  const child = spawn(process.execPath, ["--env-file=.env", pingScript], {
+    cwd: process.cwd(),
+    env: {
+      ...process.env,
+      PING_URL: process.env.PING_URL || "https://devicesdoctor.in/ping",
+    },
+    stdio: ["ignore", "inherit", "inherit"],
+  });
+
+  child.on("error", (err) => {
+    console.error("Ping service failed to start:", err.message);
+  });
+
+  child.unref();
 }
 
 app.use((req, res, next) => {
@@ -99,6 +123,7 @@ app.use((req, res, next) => {
     },
     () => {
       log(`serving on port ${port}`);
+      startPingService();
     },
   );
 })();
