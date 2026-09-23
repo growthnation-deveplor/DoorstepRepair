@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Phone, MessageCircle, MapPin, Clock, Mail } from "lucide-react";
-import { SiInstagram, SiFacebook } from "react-icons/si";
+import { SiInstagram, SiFacebook, SiGoogle } from "react-icons/si";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
@@ -126,10 +126,10 @@ export default function ContactPage() {
               </div>
               <div className="p-6 rounded-xl border border-[#00C2FF]/15 bg-[#0d2255]/40">
                 <p className="text-[#EAF7FF]/70 text-sm leading-relaxed mb-4">
-                  We provide doorstep repair services across Mumbai, Thane, Navi Mumbai, and nearby regions. Our technicians come to your location - home, office, or anywhere.
+                  We provide doorstep repair services across Mumbai, Thane, and nearby regions. Our technicians come to your location - home, office, or anywhere.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {["Mumbai", "Thane", "Navi Mumbai", "Mira Road", "Vasai", "Virar", "Kalyan", "Dombivli"].map((area) => (
+                  {["Mumbai", "Thane", "Mira Road", "Vasai", "Virar"].map((area) => (
                     <span key={area} className="px-3 py-1.5 rounded-lg bg-[#00C2FF]/10 border border-[#00C2FF]/20 text-[#00C2FF] text-xs font-medium">
                       {area}
                     </span>
@@ -145,6 +145,9 @@ export default function ContactPage() {
                   </a>
                   <a href="#" className="w-10 h-10 rounded-lg bg-[#00C2FF]/10 border border-[#00C2FF]/20 flex items-center justify-center text-[#00C2FF] hover:bg-[#00C2FF]/20 transition-colors">
                     <SiFacebook className="w-5 h-5" />
+                  </a>
+                  <a href="https://share.google/hlorewsyHbrmOaQBi" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-[#00C2FF]/10 border border-[#00C2FF]/20 flex items-center justify-center text-[#00C2FF] hover:bg-[#00C2FF]/20 transition-colors">
+                    <SiGoogle className="w-5 h-5" />
                   </a>
                 </div>
               </div>

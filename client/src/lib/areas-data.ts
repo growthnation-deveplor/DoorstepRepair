@@ -43,10 +43,7 @@ export const mumbaiAreas: Area[] = [
   { name: "Bhandup East", region: "Thane", popular: false },
   { name: "Bhandup West", region: "Thane", popular: false },
   { name: "Ghodbunder Road", region: "Thane", popular: true },
-  { name: "Kalyan East", region: "Thane", popular: true },
-  { name: "Kalyan West", region: "Thane", popular: true },
-  { name: "Dombivli East", region: "Thane", popular: true },
-  { name: "Dombivli West", region: "Thane", popular: true },
+
   { name: "Bhiwandi", region: "Thane", popular: false },
   { name: "Ulhasnagar", region: "Thane", popular: false },
   { name: "Majiwada", region: "Thane", popular: false },
@@ -107,27 +104,6 @@ export const mumbaiAreas: Area[] = [
   { name: "Mumbai Central", region: "South Mumbai", popular: false },
   { name: "Jacob Circle", region: "South Mumbai", popular: false },
 
-  { name: "Navi Mumbai", region: "Navi Mumbai", popular: true },
-  { name: "Vashi", region: "Navi Mumbai", popular: true },
-  { name: "Nerul", region: "Navi Mumbai", popular: true },
-  { name: "Belapur", region: "Navi Mumbai", popular: true },
-  { name: "Panvel", region: "Navi Mumbai", popular: true },
-  { name: "Kharghar", region: "Navi Mumbai", popular: true },
-  { name: "Airoli", region: "Navi Mumbai", popular: false },
-  { name: "Sanpada", region: "Navi Mumbai", popular: false },
-  { name: "Kopar Khairane", region: "Navi Mumbai", popular: false },
-  { name: "Ghansoli", region: "Navi Mumbai", popular: false },
-  { name: "Turbhe", region: "Navi Mumbai", popular: false },
-  { name: "Juinagar", region: "Navi Mumbai", popular: false },
-  { name: "Seawoods", region: "Navi Mumbai", popular: true },
-  { name: "Ulwe", region: "Navi Mumbai", popular: false },
-  { name: "Kamothe", region: "Navi Mumbai", popular: false },
-  { name: "Taloja", region: "Navi Mumbai", popular: false },
-  { name: "Kalamboli", region: "Navi Mumbai", popular: false },
-  { name: "Khandeshwar", region: "Navi Mumbai", popular: false },
-  { name: "New Panvel", region: "Navi Mumbai", popular: false },
-  { name: "CBD Belapur", region: "Navi Mumbai", popular: false },
-
   { name: "Mira Road", region: "Extended Western", popular: true },
   { name: "Bhayandar East", region: "Extended Western", popular: true },
   { name: "Bhayandar West", region: "Extended Western", popular: true },
@@ -137,23 +113,11 @@ export const mumbaiAreas: Area[] = [
   { name: "Virar West", region: "Extended Western", popular: true },
   { name: "Nalasopara East", region: "Extended Western", popular: false },
   { name: "Nalasopara West", region: "Extended Western", popular: false },
-  { name: "Palghar", region: "Extended Western", popular: false },
   { name: "Naigaon", region: "Extended Western", popular: false },
   { name: "Nallasopara", region: "Extended Western", popular: false },
-
-  { name: "Badlapur East", region: "Extended Eastern", popular: false },
-  { name: "Badlapur West", region: "Extended Eastern", popular: false },
-  { name: "Ambernath East", region: "Extended Eastern", popular: false },
-  { name: "Ambernath West", region: "Extended Eastern", popular: false },
-  { name: "Karjat", region: "Extended Eastern", popular: false },
-  { name: "Titwala", region: "Extended Eastern", popular: false },
-  { name: "Shahad", region: "Extended Eastern", popular: false },
-  { name: "Vitthalwadi", region: "Extended Eastern", popular: false },
-  { name: "Asangaon", region: "Extended Eastern", popular: false },
-  { name: "Kasara", region: "Extended Eastern", popular: false },
 ];
 
-export const regions = ["Western Suburbs", "Central Suburbs", "South Mumbai", "Thane", "Navi Mumbai", "Extended Western", "Extended Eastern"];
+export const regions = ["Western Suburbs", "Central Suburbs", "South Mumbai", "Thane", "Extended Western"];
 
 export function getAreasByRegion(region: string): Area[] {
   return mumbaiAreas.filter((a) => a.region === region);

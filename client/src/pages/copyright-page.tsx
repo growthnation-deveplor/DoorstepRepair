@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { SiInstagram, SiFacebook } from "react-icons/si";
+import { SiInstagram, SiFacebook, SiGoogle } from "react-icons/si";
 import { Mail } from "lucide-react";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
@@ -49,7 +49,7 @@ export default function CopyrightPage() {
 
             <div className="border-t border-[#00C2FF]/15 pt-8">
               <h3 className="text-white font-bold text-lg text-center mb-6">Connect With Us</h3>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+              <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 sm:gap-6">
                 <a
                   href="https://www.instagram.com/devicesdoctor1993?igsh=aW9tY3hvMXRsdzF2"
                   target="_blank"
@@ -78,6 +78,22 @@ export default function CopyrightPage() {
                   </div>
                   <div>
                     <p className="text-white font-semibold text-sm">Follow Facebook</p>
+                    <p className="text-[#EAF7FF]/40 text-xs">Devices Doctor</p>
+                  </div>
+                </a>
+
+                <a
+                  href="https://share.google/hlorewsyHbrmOaQBi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 px-5 py-3 rounded-xl border border-[#00C2FF]/20 bg-[#0A1A3F]/60 hover:border-[#00C2FF]/50 transition-all group"
+                  data-testid="link-copyright-google"
+                >
+                  <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center">
+                    <SiGoogle className="w-5 h-5 text-[#DB4437]" />
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold text-sm">Review on Google</p>
                     <p className="text-[#EAF7FF]/40 text-xs">Devices Doctor</p>
                   </div>
                 </a>

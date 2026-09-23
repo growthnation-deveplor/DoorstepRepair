@@ -10,7 +10,7 @@ import { usePageMeta } from "@/hooks/use-page-meta";
 export default function AreasPage() {
   usePageMeta(
     "Doorstep Mobile Repair Service Areas in Mumbai | Devices Doctor",
-    "Devices Doctor provides doorstep mobile repair across Mumbai - Andheri, Bandra, Borivali, Thane, Navi Mumbai, Powai, Malad, Goregaon & all surrounding areas."
+    "Devices Doctor provides doorstep mobile repair across Mumbai - Andheri, Bandra, Borivali, Thane, Powai, Malad, Goregaon & all surrounding areas."
   );
   return (
     <div className="min-h-screen bg-[#0A1A3F]">
@@ -32,7 +32,7 @@ export default function AreasPage() {
               Areas We <span className="bg-gradient-to-r from-[#00C2FF] to-[#00FFE0] bg-clip-text text-transparent">Serve</span>
             </h1>
             <p className="text-[#EAF7FF]/70 text-lg max-w-2xl mx-auto">
-              Doorstep device repair across Mumbai, Thane, Navi Mumbai & nearby regions. Our technicians come to you!
+              Doorstep device repair across Mumbai, Thane & nearby regions. Our technicians come to you!
             </p>
           </motion.div>
         </div>

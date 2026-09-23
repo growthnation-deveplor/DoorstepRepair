@@ -1,11 +1,12 @@
 import { Phone, Mail, MapPin } from "lucide-react";
-import { SiInstagram, SiFacebook } from "react-icons/si";
+import { SiInstagram, SiFacebook, SiGoogle } from "react-icons/si";
 import { Link } from "wouter";
 import { useContent } from "@/hooks/use-content";
 import logoPath from "@assets/WhatsApp_Image_2026-03-02_at_2.24.37_PM_1772459749185.jpeg";
 
 const INSTAGRAM_URL = "https://www.instagram.com/devicesdoctor1993?igsh=aW9tY3hvMXRsdzF2";
 const FACEBOOK_URL = "https://www.facebook.com/share/17wypKXAtc/";
+const GOOGLE_BUSINESS_URL = "https://share.google/hlorewsyHbrmOaQBi";
 const EMAIL = "devicesdoctor1993@gmail.com";
 
 export default function Footer() {
@@ -35,6 +36,9 @@ export default function Footer() {
               </a>
               <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-[#00C2FF]/10 border border-[#00C2FF]/20 flex items-center justify-center text-[#00C2FF] hover:bg-[#00C2FF]/20 transition-colors" data-testid="link-facebook">
                 <SiFacebook className="w-5 h-5" />
+              </a>
+              <a href={GOOGLE_BUSINESS_URL} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-[#00C2FF]/10 border border-[#00C2FF]/20 flex items-center justify-center text-[#00C2FF] hover:bg-[#00C2FF]/20 transition-colors" data-testid="link-google">
+                <SiGoogle className="w-5 h-5" />
               </a>
               <a href={`mailto:${EMAIL}`} className="w-10 h-10 rounded-lg bg-[#00C2FF]/10 border border-[#00C2FF]/20 flex items-center justify-center text-[#00C2FF] hover:bg-[#00C2FF]/20 transition-colors" data-testid="link-email">
                 <Mail className="w-5 h-5" />
@@ -103,7 +107,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-[#00C2FF] mt-0.5 shrink-0" />
-                <span className="text-[#EAF7FF]/50 text-sm">Mumbai, Thane, Navi Mumbai & more</span>
+                <span className="text-[#EAF7FF]/50 text-sm">Mumbai, Thane & more</span>
               </li>
             </ul>
 
@@ -118,6 +122,11 @@ export default function Footer() {
                 <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" className="text-[#EAF7FF]/50 text-xs hover:text-[#00C2FF] transition-colors flex items-center gap-1.5" data-testid="link-facebook-contact">
                   <SiFacebook className="w-3.5 h-3.5" />
                   Facebook
+                </a>
+                <span className="text-[#EAF7FF]/20">|</span>
+                <a href={GOOGLE_BUSINESS_URL} target="_blank" rel="noopener noreferrer" className="text-[#EAF7FF]/50 text-xs hover:text-[#00C2FF] transition-colors flex items-center gap-1.5" data-testid="link-google-contact">
+                  <SiGoogle className="w-3.5 h-3.5" />
+                  Google
                 </a>
               </div>
             </div>

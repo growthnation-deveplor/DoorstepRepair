@@ -23,7 +23,7 @@ export default function CitiesSection() {
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">
             Mumbai & <span className="bg-gradient-to-r from-[#00C2FF] to-[#00FFE0] bg-clip-text text-transparent">Nearby Areas</span>
           </h2>
-          <p className="text-[#EAF7FF]/60 mb-2">Doorstep repair service across {mumbaiAreas.length}+ locations in Mumbai, Thane, Navi Mumbai & surrounding regions</p>
+          <p className="text-[#EAF7FF]/60 mb-2">Doorstep repair service across {mumbaiAreas.length}+ locations in Mumbai, Thane & surrounding regions</p>
         </motion.div>
 
         <div className="space-y-8">
