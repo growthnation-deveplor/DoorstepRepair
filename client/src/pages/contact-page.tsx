@@ -140,10 +140,10 @@ export default function ContactPage() {
               <div className="mt-6 p-6 rounded-xl border border-[#00C2FF]/15 bg-[#0d2255]/40">
                 <h3 className="text-white font-bold mb-3">Follow Us</h3>
                 <div className="flex gap-3">
-                  <a href="#" className="w-10 h-10 rounded-lg bg-[#00C2FF]/10 border border-[#00C2FF]/20 flex items-center justify-center text-[#00C2FF] hover:bg-[#00C2FF]/20 transition-colors">
+                  <a href="https://www.instagram.com/devicesdoctor1993?stkn=aW9tY3hvMXRsdzF2" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-[#00C2FF]/10 border border-[#00C2FF]/20 flex items-center justify-center text-[#00C2FF] hover:bg-[#00C2FF]/20 transition-colors">
                     <SiInstagram className="w-5 h-5" />
                   </a>
-                  <a href="#" className="w-10 h-10 rounded-lg bg-[#00C2FF]/10 border border-[#00C2FF]/20 flex items-center justify-center text-[#00C2FF] hover:bg-[#00C2FF]/20 transition-colors">
+                  <a href="https://www.facebook.com/share/19atn3pZGM/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-[#00C2FF]/10 border border-[#00C2FF]/20 flex items-center justify-center text-[#00C2FF] hover:bg-[#00C2FF]/20 transition-colors">
                     <SiFacebook className="w-5 h-5" />
                   </a>
                   <a href="https://share.google/hlorewsyHbrmOaQBi" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-[#00C2FF]/10 border border-[#00C2FF]/20 flex items-center justify-center text-[#00C2FF] hover:bg-[#00C2FF]/20 transition-colors">

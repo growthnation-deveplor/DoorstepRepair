@@ -4,8 +4,8 @@ import { Link } from "wouter";
 import { useContent } from "@/hooks/use-content";
 import logoPath from "@assets/WhatsApp_Image_2026-03-02_at_2.24.37_PM_1772459749185.jpeg";
 
-const INSTAGRAM_URL = "https://www.instagram.com/devicesdoctor1993?igsh=aW9tY3hvMXRsdzF2";
-const FACEBOOK_URL = "https://www.facebook.com/share/17wypKXAtc/";
+const INSTAGRAM_URL = "https://www.instagram.com/devicesdoctor1993?stkn=aW9tY3hvMXRsdzF2";
+const FACEBOOK_URL = "https://www.facebook.com/share/19atn3pZGM/";
 const GOOGLE_BUSINESS_URL = "https://share.google/hlorewsyHbrmOaQBi";
 const EMAIL = "devicesdoctor1993@gmail.com";
 
